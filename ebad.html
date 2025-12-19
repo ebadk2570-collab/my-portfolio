@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineVerse | Movies & Web Series</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styel.css">
+    
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">CINE<span>VERSE</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#movies">Movies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#series">Web Series</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#trending">Trending</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                </ul>
+                <div class="search-box ms-lg-3 mt-3 mt-lg-0">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search movies or series...">
+                        <button type="button" class="btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>UNLIMITED <span class="highlight">MOVIES</span>, TV SHOWS & MORE</h1>
+            <p>Watch anywhere. Cancel anytime. Ready to watch? Enter your email to create or restart your membership.</p>
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control form-control-lg" placeholder="Email address">
+                        <button class="btn btn-primary btn-lg" type="button">Get Started <i class="fas fa-chevron-right ms-2"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Content -->
+    <section class="py-5" id="trending">
+        <div class="container">
+            <h2 class="section-title">Featured This Week</h2>
+            <div class="featured-slider">
+                <div class="featured-item" style="background-image: url('https://images.unsplash.com/photo-1536440136628-849c177e76a1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');">
+                    <div class="featured-overlay"></div>
+                    <div class="featured-content">
+                        <span class="featured-badge">NEW RELEASE</span>
+                        <h2 class="mb-3">The Last Kingdom: Seven Kings Must Die</h2>
+                        <p class="mb-4">In the wake of King Edward's death, Uhtred of Bebbanburg and his comrades adventure across a fractured kingdom in the hopes of uniting England at last.</p>
+                        <button class="btn btn-primary">Watch Now</button>
+                        <button class="btn btn-outline-primary ms-2">More Info</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Movies Section -->
+    <section class="py-5" id="movies">
+        <div class="container">
+            <h2 class="section-title">Popular Movies</h2>
+            <div class="row" id="movies-container">
+                <!-- Movies will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Web Series Section -->
+    <section class="py-5" id="series">
+        <div class="container">
+            <h2 class="section-title">Top Web Series</h2>
+            <div class="row" id="series-container">
+                <!-- Series will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="footer-logo">CINEVERSE</div>
+                    <p>Your ultimate destination for movies and web series. Stream the latest blockbusters and binge-worthy shows anytime, anywhere.</p>
+                    <div class="social-icons mt-4">
+                        <a href="https://www.facebook.com/help/2053403608222571/?helpref=uf_share"><i class="fab fa-facebook-f"></i></a>
+                        <a href="instagram.com/ebad_khan65"><i class="fab fa-twitter"></i></a>
+                        <a href="instagram.com/ebad_khan65"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <div class="footer-links">
+                        <h5>Quick Links</h5>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#movies">Movies</a></li>
+                            <li><a href="#series">Web Series</a></li>
+                            <li><a href="#trending">Trending</a></li>
+                            <li><a href="#about">About Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <div class="footer-links">
+                        <h5>Genres</h5>
+                        <ul>
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Drama</a></li>
+                            <li><a href="#">Comedy</a></li>
+                            <li><a href="#">Thriller</a></li>
+                            <li><a href="#">Sci-Fi</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-links">
+                        <h5>Contact Us</h5>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt me-2"></i> 123 Cinema Street, Hollywood</li>
+                            <li><i class="fas fa-phone me-2"></i> +1 234 567 8900</li>
+                            <li><i class="fas fa-envelope me-2"></i> info@cineverse.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 CineVerse. All Rights Reserved. | Designed with <i class="fas fa-heart text-danger"></i> for movie lovers</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
